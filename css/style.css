@@ -1,0 +1,283 @@
+/* Header styling start */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: #dd8100;
+}
+
+#logo{
+    display: flex;
+    margin-left: 25px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    input{
+        border-radius: 20px;
+        font-size: 2rem;
+        height: 40px;
+    }
+}
+
+#fca{
+    margin-left: auto;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        display: inline-block;
+        margin-right: 25px;
+    }
+}
+
+#searchIcon{
+    margin-left: -45px;
+}
+
+#searchBar{
+    color: #646363;
+}
+
+/* Header styling end */
+
+
+
+/* Catagory */
+
+#catagory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #df880d;
+    height: 4rem;
+    width: 100%;
+    ul{
+        padding: 0px;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    li{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    li:hover{
+        color: black;
+    }
+}
+
+/* Catagory */
+
+
+
+/* Main body styling start */
+@media (max-width: 56.25em){
+    #grid_section{
+        grid-gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+
+#grid_section{
+    display: grid;
+    margin: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 56.25em){
+    .product-card{
+        height: auto;
+    }
+}
+
+.product_card{
+    width: 100%;
+    height: 470px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_card_name {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.product_card_price {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.add_to_cart, #cartBtn{
+    color: white;
+    background-color: #dd8100;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    border-radius: .313rem;
+}
+
+.add_to_cart:hover{
+    background-color: #dd8100;
+}
+
+#cartwithNum{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    #productCounter{
+        margin-bottom: -15px;
+        color: red;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    #cartimage{
+        margin-bottom: 30px;
+    }
+}
+/* Main body styling end */
+
+
+
+/* Footer styling start */
+footer{
+    /* position: static; */
+    bottom: 0;
+    width: 100%;
+    background-color: #464646;
+}
+
+#footer-container{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#firstsec{
+    margin-left: 40px;
+    text-align: center;
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+#secondsec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+#sites{
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+#thirdsec{
+    margin-right: 45px;
+}
+
+#partnersIcon{
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        display: inline-block;
+        margin-right: 35px;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+/* Footer styling end */
+
+
+
+
+
+
+
+/* Cart listing page */
+#the_main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartitem_list_card{
+    background-color:aliceblue;
+    display: grid;
+    margin: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+/* Cart listing page */

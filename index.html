@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body id="body" onload="loadProducts('Home');">
+    <!-- Header Block Start -->
+    <header>
+        <div id="container">
+            <div id="logo">
+                <img src="assets/icons/e-100.png" width="70px" height="70px" alt="Logo">
+                <h2>E-commerce</h2>
+            </div>
+
+            <div id="search">
+                <div><img id="dropIcon" src="assets/icons/dropdown-60.png" width="40px" height="40px" alt="Dropdown"></div> 
+                <input id="searchBar" type="text" placeholder="Search product">
+                <img id="searchIcon" src="assets/icons/search-60.png" width="40px" height="40px" alt="Search-bar">
+            </div>
+
+            <div id="fca">
+                <ul>
+                    <li><img src="assets/icons/favorite-100.png" width="40px" height="40px" alt="Favorite"></li>
+                    <li><div id="cartwithNum">
+                        <h4 id="productCounter">0</h4>
+                        <img id="cartimage" src="assets/icons/cart-100.png" width="40px" height="40px" alt="Cart" onclick="cartBtnOnclick();">
+                    </div></li>
+                    <li><img src="assets/icons/history-100.png" width="40px" height="40px" alt="history"></li>
+                    <li><img src="assets/icons/male-user-96.png" width="40px" height="40px" alt="Profile"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="catagory">
+        <div id="cata">
+            <ul>
+                <li onclick="loadCatagory('Home');">Home</li>
+                <li onclick="loadCatagory('Electronics');">Electronics</li>
+                <li onclick="loadCatagory('Fashion');">Fashion</li>
+                <li onclick="loadCatagory('Books');">Books</li>
+                <li onclick="loadCatagory('Music instruments');">Music instruments</li>
+                <li onclick="loadCatagory('Sports');">Sports</li>
+                <li onclick="loadCatagory('Auto parts & Accessories');">Auto parts & Accessories</li>
+                <li onclick="loadCatagory('Insdustrial equipment');">Insdustrial equipment</li>
+                <li onclick="loadCatagory('Collectibles & Art');">Collectibles & Art</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header Block End -->
+
+
+
+
+    <!-- The main body -->
+    <main id="main_dashboard">
+        <div id="latestproducts">
+            <h4>Latest products</h4>
+            <div id="grid_section"></div>
+        </div>
+    </main>
+    <!-- The main body -->
+
+
+
+
+    <!-- Footer Block Start -->
+    <footer>
+        <div id="footer-container">
+            <div id="firstsec">
+                <h2>Our Partners</h2><br>
+                <div id="partnersIcon">
+                    <ul>
+                        <li><img src="assets/partners/telebirr.png" alt="tele" width="45px" height="45px"></li>
+                        <li><img src="assets/partners/chapa.png" alt="chapa" width="45px" height="45px"></li>
+                        <li><img src="assets/partners/santim.png" alt="santim" width="45px" height="45px"></li>
+                        <li><img src="assets/partners/Dashen_Bank.png" alt="dashen" width="45px" height="45px"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="secondsec">
+                <div>
+                    <ul>
+                        <li><h2>Information</h2></li>
+                        <li>Manage Your Account</li>
+                        <li>About Us</li>
+                        <li>Term & Condition</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><h2>Help & Support</h2></li>
+                        <li>Shipping Info</li>
+                        <li>Refunds</li>
+                        <li>How to Order</li>
+                        <li>How to Track </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><h2>Contact Us</h2></li>
+                        <li>Physical Location</li>
+                        <li>Call Center</li>
+                        <li>Other Sites</li>
+                        <li>Mass Media</li>
+                    </ul>
+                </div>   
+            </div>    
+            
+            <div id="thirdsec">
+                <ul>
+                    <li><img src="assets/sites/facebook-48.png" alt="F" width="40px" height="40px"></li>
+                    <li><img src="assets/sites/twitter-48.png" alt="T" width="40px" height="40px"></li>
+                    <li><img src="assets/sites/instagram-48.png" alt="I" width="40px" height="40px"></li>
+                    <li><img src="assets/sites/youtube-48.png" alt="Y" width="40px" height="40px"></li>
+                </ul>
+            </div>
+                
+        </div>
+    </footer>
+    <!-- Footer Block Start -->
+</body>
+</html>
